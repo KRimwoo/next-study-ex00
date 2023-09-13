@@ -1,5 +1,3 @@
-import { inherits } from "util";
-
 type Post = {
   username: string;
   avatar: string;

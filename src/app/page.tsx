@@ -18,11 +18,12 @@ export default async function Home() {
       <div style={{ display: "flex", flexDirection: "column" }}>
         {posts &&
           posts.map((post, index) => (
-            <CardComponent key={index}>
+            <CardComponent key={index} postId={index}>
               <Post post={post} />
             </CardComponent>
           ))}
       </div>
+      
     </>
   );
 }
