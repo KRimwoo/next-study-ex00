@@ -33,7 +33,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({
     <Modal open={open} onClose={onClose}>
       <Box sx={style}>
         <div>{children}</div>
-        <p>post number: {id}</p>
+        {id >= 0 && <p>post number: {id}</p>}
       </Box>
     </Modal>
   );
